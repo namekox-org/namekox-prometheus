@@ -16,14 +16,14 @@ readme = open(os.path.join(curdir, 'READIT.md'), 'rb', 'utf-8').read()
 
 setup(
     name='namekox-prometheus',
-    version='0.0.3',
+    version='0.0.4',
     description='namekox prometheus',
     long_description=readme,
     long_description_content_type='text/markdown',
     author='forcemain',
     url='https://forcemain.github.io/',
     packages=find_packages(exclude=['test', 'test.*']),
-    install_requires=["namekox-core>=0.0.1", "prometheus-client>=0.9.0"],
+    install_requires=["namekox-core", "prometheus-client==0.9.0"],
     zip_safe=True,
     license='Apache License, Version 2.0',
     classifiers=[
